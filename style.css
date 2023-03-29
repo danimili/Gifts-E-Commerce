@@ -19,6 +19,7 @@
   --p-font: 1.3rem;
 }
 
+
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -165,4 +166,70 @@ section {
 #banner-img{
     height: 300px;
     width: 300px;
+}
+
+.product-img{
+width: 300px;
+height: 400px;
+}
+
+.center-txt h2{
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4.5rem;
+    text-align: center;
+}
+
+.row{
+    position: relative;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.row h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+.row h4:hover{
+    color: var(--main-color);
+}
+
+.row h5{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+}
+
+.row .cart-btn a {
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--bg-color);
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.row:hover .cart-btn a {
+    opacity: 0.8;
 }
