@@ -86,5 +86,10 @@ header{
 }
 
 .header-icons i:hover{
-    color: var(--main-color)
+    color: var(--main-color);
+    transform: translateY(-4px);
+}
+
+.hamburger-menu{
+    display: none;
 }
