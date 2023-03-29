@@ -139,3 +139,30 @@ section {
 .home-btn:hover{
     background-color: var(--2nd-color);
 }
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.banner-img{
+    overflow: hidden;
+}
+
+.banner-img img{
+   width: 100%;
+   display: block;
+   transition: transform 0.5s;
+   cursor: pointer;
+}
+
+.banner-img:hover img{
+    transform: scale(1.1);
+}
+
+#banner-img{
+    height: 300px;
+    width: 300px;
+}
