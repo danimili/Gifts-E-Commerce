@@ -19,6 +19,7 @@
   --p-font: 1.3rem;
 }
 
+
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
