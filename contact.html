@@ -41,27 +41,29 @@
             <a class="hamburger-menu"><i class='bx bx-menu'></i></a>
         </div>
     </header>
+
     <div id="container">
-        <form action="#" method="post" id="contact_form">
+        <form method="post" id="contact_form" action="https://formspree.io/f/xknaqvjg">
             <div class="name">
                 <label for="name"></label>
-                <input type="text" placeholder="Name" name="name" id="name_input" required>
+                <input onkeyup="enableSubmit()" type="text" placeholder="Name" name="name" id="name_input" class="required">
             </div>
             <div class="email">
                 <label for="email"></label>
-                <input type="email" placeholder="Email" name="email" id="email_input" required>
+                <input onkeyup="enableSubmit()" type="email" placeholder="Email" name="email" id="email_input" class="required">
             </div>
             <div class="telephone">
                 <label for="name"></label>
-                <input type="text" placeholder="Number" name="telephone" id="telephone_input" required>
+                <input onkeyup="enableSubmit()" type="text" placeholder="Number" name="telephone" id="telephone_input" class="required">
             </div>
             <div class="subject">
                 <label for="subject"></label>
-                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                <select placeholder="Subject line" name="subject" id="subject_input" class="required">
                     <option disabled hidden selected>Subject</option>
                     <option>Suggestions</option>
                     <option>Consults</option>
                     <option>Question</option>
+                    <option>Other</option>
                 </select>
             </div>
             <div class="message">
@@ -70,10 +72,11 @@
                     required></textarea>
             </div>
             <div class="submit">
-                <input type="submit" value="Send Message" id="form_button" />
+                <input type="submit" disabled value="Send Message" id="form_button" />
             </div>
         </form>
     </div>
+    <script src="contact.js"></script>
 </body>
 
 </html>
