@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARTICLES</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +15,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&family=Roboto:wght@100&family=Sacramento&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@100;300;400;500;700;800;900&family=Roboto:wght@100&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@100;300;400;500;700;800;900&family=Roboto:wght@100&family=Sacramento&family=Satisfy&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <header>
-        <a href="index.html" id="logo"><img class="logo" src='./logo.png' alt="logo"/></a>
+        <a href="index.html" id="logo"><img class="logo" src='./logo.png' alt="logo" /></a>
 
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
@@ -31,11 +36,44 @@
         <div class="header-icons">
             <a href="https://www.facebook.com/" target=”_blank”><i class='bx bxl-facebook-circle'></i></a>
             <a href="https://www.linkedin.com/feed/" target=”_blank”><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://www.instagram.com/" target=”_blank”><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.instagram.com/" target=”_blank”><i class='bx bxl-instagram-alt'></i></a>
             <a href="cart.html"><i class='bx bxs-cart'></i></a>
             <a class="hamburger-menu"><i class='bx bx-menu'></i></a>
         </div>
     </header>
-
+    <div id="container">
+        <form action="#" method="post" id="contact_form">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" name="name" id="name_input" required>
+            </div>
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Email" name="email" id="email_input" required>
+            </div>
+            <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="Number" name="telephone" id="telephone_input" required>
+            </div>
+            <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                    <option disabled hidden selected>Subject</option>
+                    <option>Suggestions</option>
+                    <option>Consults</option>
+                    <option>Question</option>
+                </select>
+            </div>
+            <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5"
+                    required></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Send Message" id="form_button" />
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
